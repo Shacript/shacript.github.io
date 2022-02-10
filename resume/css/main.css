@@ -1,0 +1,1407 @@
+/* fonts */
+@font-face {
+  font-family: subject_regular;
+  src: url(../fonts/subject_regular.ttf);
+}
+
+@font-face {
+  font-family: subject_bold;
+  src: url(../fonts/subject_bold.ttf);
+}
+
+/* Scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #414141;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00aea3;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  color: #fff;
+  background-color: #201d1d;
+  font-family: subject_regular;
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Bootstrap thing */
+
+.logo {
+  width: 75px;
+  height: 75px;
+}
+
+.navbar-custom {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(34, 34, 34, 1) 100%
+  );
+}
+
+.navbar-custom a {
+  font-size: 1.1em;
+  color: #757575;
+}
+
+.navbar-custom a:hover {
+  color: #fff;
+}
+
+.navbar-custom .active {
+  color: #fff;
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+.navbar-custom .nav-link {
+  margin-left: 35px;
+}
+
+#about ul {
+  list-style-image: url("../images/leaf.png");
+}
+
+/* Extra small */
+@media screen and (max-width: 576px) {
+  /* Home Section */
+  #home {
+    height: 100vh;
+    padding-top: 8em;
+  }
+
+  .welcome {
+    padding: 0 2rem;
+  }
+
+  .welcome .line1 {
+    text-align: left;
+    font-size: 1.5rem;
+    color: #00aea3;
+  }
+
+  .welcome .line2 {
+    font-family: subject_bold;
+    letter-spacing: 0.1px;
+    text-align: left;
+    font-size: 6.9vw;
+  }
+
+  .welcome .line3 {
+    text-align: right;
+    font-size: 1.1rem;
+    color: #00aea3;
+    padding-right: 0.1em;
+  }
+
+  .welcome .line4 {
+    text-align: right;
+    padding-top: 0.9rem;
+    padding-right: 0.3rem;
+  }
+
+  .welcome .line4 .facebook {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-left: 1rem;
+  }
+
+  .welcome .line4 .github {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-left: 1rem;
+  }
+
+  .welcome .line4 .email {
+    width: 3.1rem;
+    height: 1.6rem;
+    margin-left: 0.7rem;
+  }
+
+  .profile {
+    margin-top: 2em;
+    object-fit: cover;
+    border-radius: 10%;
+    width: 80%;
+  }
+
+  /* About Me Section */
+  #about {
+    padding-top: 10em;
+    height: 100vh;
+    padding: 0 2rem;
+  }
+
+  #about .profile {
+    width: 40%;
+  }
+
+  #about h1 {
+    margin-top: 2rem;
+    text-align: center;
+    font-family: subject_bold;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #about p {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+  }
+
+  #about ul {
+    margin-top: 3em;
+  }
+
+  #about li {
+    margin-bottom: 0.1rem;
+    color: #dbdada;
+    font-size: 0.9rem;
+  }
+
+  /* Skill Section */
+  #skills {
+    padding-top: 10em;
+  }
+
+  #skills h1 {
+    font-family: subject_bold;
+    margin-bottom: 1.2rem;
+    font-size: 2.2rem;
+  }
+
+  #skills h2 {
+    color: #aaaaaa;
+    margin-bottom: 2.3rem;
+    font-size: 1.6rem;
+  }
+
+  #skills h3 {
+    font-family: subject_bold;
+    color: #00aea3;
+    text-align: center;
+  }
+
+  #skills h4 {
+    font-family: subject_bold;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #aaaaaa;
+  }
+
+  #skills ul {
+    margin-top: 1.2rem;
+    list-style-type: none;
+    margin-bottom: 1.7rem;
+  }
+
+  #skills li {
+    color: #aaaaaa;
+    font-size: 0.8rem;
+    margin-bottom: 0.05rem;
+  }
+
+  /* Projects Section */
+  #projects {
+    padding: 0 2rem;
+    padding-top: 10rem;
+  }
+
+  #projects .row {
+    --bs-gutter-y: 3rem;
+  }
+
+  #projects .header h1 {
+    font-family: subject_bold;
+    text-align: right;
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+  }
+
+  #projects .header h2 {
+    color: #aaaaaa;
+    text-align: right;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+
+  #projects .project h1 {
+    color: #00aea3;
+    font-size: 1.4rem;
+  }
+
+  #projects .project h1 span {
+    color: #fff;
+    font-size: 0.9rem;
+  }
+
+  #projects .project p {
+    color: #aaaaaa;
+    font-size: 0.8rem;
+  }
+
+  #projects .project .tag span {
+    font-size: 0.7rem;
+    padding: 0.12rem 0.7rem;
+    border: 1px solid;
+    margin-right: 0.65rem;
+    margin-bottom: 0.65rem;
+    border-radius: 0.35rem;
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 10em 2rem;
+  }
+
+  #contact h1 {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  #contact .desc {
+    font-size: 0.8rem;
+    color: #aaaaaa;
+    margin-bottom: 2rem;
+  }
+
+  #contact .last-desc {
+    font-size: 0.9rem;
+    margin-bottom: 1.9rem;
+  }
+
+  #contact .btn-custom {
+    padding: 0.35rem 1.8rem;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 0.3rem;
+    transition: all 0.2s;
+  }
+
+  .footer img {
+    width: 2rem;
+  }
+}
+
+/* Small */
+@media screen and (min-width: 576px) {
+  /* Home Section */
+  #home {
+    padding-top: 10em;
+  }
+
+  .welcome .line1 {
+    text-align: left;
+    font-size: 2rem;
+    color: #00aea3;
+  }
+
+  .welcome .line2 {
+    font-family: subject_bold;
+    letter-spacing: 0.1px;
+    text-align: left;
+    font-size: 2.9rem;
+  }
+
+  .welcome .line3 {
+    text-align: right;
+    font-size: 1.9rem;
+    color: #00aea3;
+    padding-right: 0.1em;
+  }
+
+  .welcome .line4 {
+    text-align: right;
+    padding-top: 0.9rem;
+    padding-right: 0.3rem;
+    margin-bottom: 3rem;
+  }
+
+  .welcome .line4 .facebook {
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-left: 1rem;
+  }
+
+  .welcome .line4 .github {
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-left: 1rem;
+  }
+
+  .welcome .line4 .email {
+    width: 3.2rem;
+    height: 1.7rem;
+    margin-left: 0.7rem;
+  }
+
+  .profile {
+    margin-top: 2em;
+    object-fit: cover;
+    border-radius: 10%;
+    width: 80%;
+  }
+
+  /* About Me Section */
+  #about {
+    padding-top: 10em;
+    height: 100vh;
+  }
+
+  #about .profile {
+    width: 40%;
+  }
+
+  #about h1 {
+    margin-top: 3rem;
+    text-align: center;
+    font-family: subject_bold;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #about p {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+  }
+
+  #about ul {
+    margin-top: 3em;
+  }
+
+  #about li {
+    margin-bottom: 0.1rem;
+    color: #dbdada;
+    font-size: 0.9rem;
+  }
+
+  /* Skill Section */
+  #skills {
+    padding-top: 15em;
+    height: 100vh;
+  }
+
+  #skills h1 {
+    font-family: subject_bold;
+    margin-bottom: 1.2rem;
+    font-size: 2.2rem;
+  }
+
+  #skills h2 {
+    color: #aaaaaa;
+    margin-bottom: 2.3rem;
+    font-size: 1.6rem;
+  }
+
+  #skills h3 {
+    font-family: subject_bold;
+    color: #00aea3;
+    text-align: center;
+  }
+
+  #skills h4 {
+    font-family: subject_bold;
+    text-align: center;
+    color: #aaaaaa;
+  }
+
+  #skills ul {
+    margin-top: 1.2rem;
+    list-style-type: none;
+    margin-bottom: 1.7rem;
+  }
+
+  #skills li {
+    color: #aaaaaa;
+    font-size: 0.8rem;
+    margin-bottom: 0.05rem;
+  }
+
+  /* Projects Section */
+  #projects {
+    padding-top: 40rem;
+  }
+
+  #projects .row {
+    --bs-gutter-y: 3rem;
+  }
+
+  #projects .header h1 {
+    font-family: subject_bold;
+    text-align: right;
+    margin-bottom: 1.2rem;
+    font-size: 2.4rem;
+  }
+
+  #projects .header h2 {
+    color: #aaaaaa;
+    text-align: right;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+  }
+
+  #projects .project h1 {
+    color: #00aea3;
+    font-size: 1.4rem;
+  }
+
+  #projects .project h1 span {
+    color: #fff;
+    font-size: 0.9rem;
+  }
+
+  #projects .project p {
+    color: #aaaaaa;
+    font-size: 0.8rem;
+  }
+
+  #projects .project .tag span {
+    font-size: 0.7rem;
+    padding: 0.12rem 0.7rem;
+    border: 1px solid;
+    margin-right: 0.65rem;
+    margin-bottom: 0.65rem;
+    border-radius: 0.35rem;
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 10em 0;
+  }
+
+  #contact h1 {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+  }
+
+  #contact .desc {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    margin-bottom: 2rem;
+  }
+
+  #contact .last-desc {
+    font-size: 1.1rem;
+    margin-bottom: 1.9rem;
+  }
+
+  #contact .btn-custom {
+    padding: 0.35rem 1.8rem;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 0.3rem;
+    transition: all 0.2s;
+  }
+
+  .footer img {
+    width: 2rem;
+  }
+}
+
+/* Medium */
+@media screen and (min-width: 768px) {
+  /* Home Section */
+  #home {
+    padding-top: 0em;
+    height: 100vh;
+  }
+
+  .welcome .line1 {
+    text-align: left;
+    font-size: 2rem;
+    color: #00aea3;
+  }
+
+  .welcome .line2 {
+    font-family: subject_bold;
+    letter-spacing: 0.1px;
+    text-align: left;
+    font-size: 1.9rem;
+  }
+
+  .welcome .line3 {
+    text-align: right;
+    font-size: 1.2rem;
+    color: #00aea3;
+    padding-right: 0.1em;
+  }
+
+  .welcome .line4 {
+    text-align: right;
+    padding-top: 0.9rem;
+    padding-right: 0.3rem;
+  }
+
+  .welcome .line4 .facebook {
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-left: 1rem;
+  }
+
+  .welcome .line4 .github {
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-left: 1rem;
+  }
+
+  .welcome .line4 .email {
+    width: 3.2rem;
+    height: 1.7rem;
+    margin-left: 0.7rem;
+  }
+
+  .profile {
+    object-fit: cover;
+    border-radius: 10%;
+    width: 80%;
+  }
+
+  /* About Me Section */
+  #about {
+    padding-top: 0;
+    height: 100vh;
+  }
+
+  #about .profile {
+    width: 70%;
+  }
+
+  #about h1 {
+    margin-top: 0rem;
+    text-align: left;
+    font-family: subject_bold;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #about p {
+    color: #aaaaaa;
+    font-size: 0.6rem;
+  }
+
+  #about ul {
+    margin-top: 0;
+  }
+
+  #about li {
+    margin-bottom: 0.1rem;
+    color: #dbdada;
+    font-size: 0.9rem;
+  }
+
+  /* Skill Section */
+  #skills {
+    padding-top: 0;
+    /* height: 100vh; */
+  }
+
+  #skills h1 {
+    font-family: subject_bold;
+    margin-bottom: 1.3rem;
+    font-size: 2.4rem;
+  }
+
+  #skills h2 {
+    color: #aaaaaa;
+    margin-bottom: 2.4rem;
+    font-size: 1.8rem;
+  }
+
+  #skills h3 {
+    font-family: subject_bold;
+    color: #00aea3;
+    text-align: center;
+  }
+
+  #skills h4 {
+    font-family: subject_bold;
+    text-align: center;
+    color: #aaaaaa;
+  }
+
+  #skills ul {
+    margin-top: 1.3rem;
+    list-style-type: none;
+    margin-bottom: 1.8rem;
+  }
+
+  #skills li {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    margin-bottom: 0.05rem;
+  }
+
+  /* Projects Section */
+  #projects {
+    padding-top: 10rem;
+  }
+
+  #projects .row {
+    --bs-gutter-x: 6.3rem;
+  }
+
+  #projects .header h1 {
+    font-family: subject_bold;
+    text-align: right;
+    margin-bottom: 1.2rem;
+    font-size: 2.4rem;
+  }
+
+  #projects .header h2 {
+    color: #aaaaaa;
+    text-align: right;
+    font-size: 1.6rem;
+  }
+
+  #projects .project h1 {
+    color: #00aea3;
+    font-size: 1.4rem;
+  }
+
+  #projects .project h1 span {
+    color: #fff;
+    font-size: 0.9rem;
+  }
+
+  #projects .project p {
+    color: #aaaaaa;
+    font-size: 0.8rem;
+  }
+
+  #projects .project .tag span {
+    font-size: 0.7rem;
+    padding: 0.12rem 0.7rem;
+    border: 1px solid;
+    margin-right: 0.65rem;
+    margin-bottom: 0.65rem;
+    border-radius: 0.35rem;
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 10em 0;
+  }
+
+  #contact h1 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  #contact .desc {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    margin-bottom: 2rem;
+  }
+
+  #contact .last-desc {
+    font-size: 1.1rem;
+    margin-bottom: 1.9rem;
+  }
+
+  #contact .btn-custom {
+    padding: 0.35rem 1.8rem;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 0.3rem;
+    transition: all 0.2s;
+  }
+
+  .footer img {
+    width: 2rem;
+  }
+}
+
+/* Large */
+@media screen and (min-width: 992px) {
+  /* Home Section */
+
+  #home {
+    height: 100vh;
+  }
+
+  .welcome .line1 {
+    text-align: left;
+    font-size: 2rem;
+    color: #00aea3;
+  }
+
+  .welcome .line2 {
+    font-family: subject_bold;
+    letter-spacing: 0.1px;
+    text-align: left;
+    font-size: 2.6rem;
+  }
+
+  .welcome .line3 {
+    text-align: right;
+    font-size: 1.6rem;
+    color: #00aea3;
+    padding-right: 0.1em;
+  }
+
+  .welcome .line4 {
+    text-align: right;
+    padding-top: 0.9rem;
+    padding-right: 0.3rem;
+  }
+
+  .welcome .line4 .facebook {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: 1rem;
+  }
+
+  .welcome .line4 .github {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: 1rem;
+  }
+
+  .welcome .line4 .email {
+    width: 3.3rem;
+    height: 1.8rem;
+    margin-left: 0.7rem;
+  }
+
+  .profile {
+    object-fit: cover;
+    border-radius: 10%;
+  }
+
+  /* About Me Section */
+  #about {
+    height: 100vh;
+  }
+
+  #about h1 {
+    font-family: subject_bold;
+    font-size: 2.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #about p {
+    color: #aaaaaa;
+    font-size: 0.8rem;
+  }
+
+  #about li {
+    margin-bottom: 0.1rem;
+    color: #dbdada;
+    font-size: 1rem;
+  }
+
+  /* Skill Section */
+  /* #skills {
+  } */
+
+  #skills h1 {
+    font-family: subject_bold;
+    margin-bottom: 1.4rem;
+    font-size: 2.6rem;
+  }
+
+  #skills h2 {
+    color: #aaaaaa;
+    margin-bottom: 2.4rem;
+  }
+
+  #skills h3 {
+    font-family: subject_bold;
+    color: #00aea3;
+    text-align: center;
+  }
+
+  #skills h4 {
+    font-family: subject_bold;
+    text-align: center;
+    color: #aaaaaa;
+  }
+
+  #skills ul {
+    margin-top: 1.4rem;
+    list-style-type: none;
+    margin-bottom: 1.9rem;
+  }
+
+  #skills li {
+    color: #aaaaaa;
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+  }
+
+  /* Projects Section */
+  #projects {
+    height: 100vh;
+    padding-top: 10rem;
+  }
+
+  #projects .row {
+    --bs-gutter-x: 6.4rem;
+  }
+
+  #projects .header h1 {
+    font-family: subject_bold;
+    text-align: right;
+    margin-bottom: 1.3rem;
+    font-size: 2.6rem;
+  }
+
+  #projects .header h2 {
+    color: #aaaaaa;
+    text-align: right;
+    font-size: 1.7rem;
+  }
+
+  #projects .project h1 {
+    color: #00aea3;
+    font-size: 1.5rem;
+  }
+
+  #projects .project h1 span {
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  #projects .project p {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+  }
+
+  #projects .project .tag span {
+    padding: 0.14rem 0.8rem;
+    border: 1px solid;
+    margin-right: 0.7rem;
+    margin-bottom: 0.7rem;
+    border-radius: 0.4rem;
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 10em 0;
+  }
+
+  #contact h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  #contact .desc {
+    color: #aaaaaa;
+    margin-bottom: 2rem;
+  }
+
+  #contact .last-desc {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  #contact .btn-custom {
+    padding: 0.4rem 1.9rem;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.4rem;
+    border-radius: 0.3rem;
+    transition: all 0.2s;
+  }
+
+  .footer img {
+    width: 2rem;
+  }
+}
+
+/* X-Large */
+@media screen and (min-width: 1200px) {
+  /* Home Section */
+  #home {
+    height: 100vh;
+  }
+
+  .welcome .line1 {
+    text-align: left;
+    font-size: 2rem;
+    color: #00aea3;
+  }
+
+  .welcome .line2 {
+    font-family: subject_bold;
+    letter-spacing: 0.1px;
+    text-align: left;
+    font-size: 3.1rem;
+  }
+
+  .welcome .line3 {
+    text-align: right;
+    font-size: 2rem;
+    color: #00aea3;
+    padding-right: 0.1em;
+  }
+
+  .welcome .line4 {
+    text-align: right;
+    padding-top: 0.9rem;
+    padding-right: 0.3rem;
+  }
+
+  .welcome .line4 .facebook {
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-left: 1rem;
+  }
+
+  .welcome .line4 .github {
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-left: 1rem;
+  }
+
+  .welcome .line4 .email {
+    width: 3.4rem;
+    height: 1.9rem;
+    margin-left: 0.7rem;
+  }
+
+  .profile {
+    object-fit: cover;
+    border-radius: 10%;
+  }
+
+  /* About Me Section */
+  #about {
+    height: 100vh;
+  }
+
+  #about h1 {
+    font-family: subject_bold;
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #about p {
+    color: #aaaaaa;
+    font-size: 1rem;
+  }
+
+  #about li {
+    margin-bottom: 0.2rem;
+    color: #dbdada;
+    font-size: 1.1rem;
+  }
+
+  /* Skill Section */
+  #skills {
+    height: 100vh;
+  }
+
+  #skills h1 {
+    font-family: subject_bold;
+    margin-bottom: 1.5rem;
+    font-size: 2.8rem;
+  }
+
+  #skills h2 {
+    color: #aaaaaa;
+    margin-bottom: 2.5rem;
+  }
+
+  #skills h3 {
+    font-family: subject_bold;
+    color: #00aea3;
+    text-align: center;
+  }
+
+  #skills h4 {
+    font-family: subject_bold;
+    text-align: center;
+    color: #aaaaaa;
+  }
+
+  #skills ul {
+    margin-top: 1.5rem;
+    list-style-type: none;
+    margin-bottom: 0;
+  }
+
+  #skills li {
+    color: #aaaaaa;
+    font-size: 1.1rem;
+    margin-bottom: 0.15rem;
+  }
+
+  /* Projects Section */
+  #projects {
+    height: 100vh;
+    padding-top: 0rem;
+  }
+
+  #projects .row {
+    --bs-gutter-x: 6.5rem;
+  }
+
+  #projects .header h1 {
+    font-family: subject_bold;
+    text-align: right;
+    margin-bottom: 1.4rem;
+    font-size: 2.7rem;
+  }
+
+  #projects .header h2 {
+    color: #aaaaaa;
+    text-align: right;
+    font-size: 1.8rem;
+  }
+
+  #projects .project h1 {
+    color: #00aea3;
+    font-size: 1.6rem;
+  }
+
+  #projects .project h1 span {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+
+  #projects .project p {
+    color: #aaaaaa;
+    font-size: 1rem;
+  }
+
+  #projects .project .tag span {
+    padding: 0.15rem 0.85rem;
+    border: 1px solid;
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0.45rem;
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 10em 0;
+  }
+
+  #contact h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #contact .desc {
+    color: #aaaaaa;
+    margin-bottom: 2rem;
+  }
+
+  #contact .last-desc {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  #contact .btn-custom {
+    padding: 0.5rem 2rem;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    transition: all 0.2s;
+  }
+
+  .footer img {
+    width: 2rem;
+  }
+}
+
+/* XX-Large */
+@media screen and (min-width: 1400px) {
+  /* Home Section */
+  #home {
+    height: 100vh;
+  }
+
+  .welcome .line1 {
+    text-align: left;
+    font-size: 2rem;
+    color: #00aea3;
+  }
+
+  .welcome .line2 {
+    font-family: subject_bold;
+    letter-spacing: 0.1px;
+    text-align: left;
+    font-size: 3.6rem;
+  }
+
+  .welcome .line3 {
+    text-align: right;
+    font-size: 2.3rem;
+    color: #00aea3;
+    padding-right: 0.1em;
+  }
+
+  .welcome .line4 {
+    text-align: right;
+    padding-top: 0.9rem;
+    padding-right: 0.3rem;
+  }
+
+  .welcome .line4 .facebook {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+  }
+
+  .welcome .line4 .github {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+  }
+
+  .welcome .line4 .email {
+    width: 3.5rem;
+    height: 2rem;
+    margin-left: 0.7rem;
+  }
+
+  .profile {
+    object-fit: cover;
+    border-radius: 10%;
+  }
+
+  /* About Me Section */
+  #about {
+    height: 100vh;
+  }
+
+  #about h1 {
+    font-family: subject_bold;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #about p {
+    color: #aaaaaa;
+    font-size: 1.2rem;
+  }
+
+  #about li {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    color: #dbdada;
+  }
+
+  /* Skill Section */
+  #skills {
+    height: 100vh;
+  }
+
+  #skills h1 {
+    font-family: subject_bold;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+  }
+
+  #skills h2 {
+    color: #aaaaaa;
+    margin-bottom: 3rem;
+  }
+
+  #skills h3 {
+    font-family: subject_bold;
+    color: #00aea3;
+    text-align: center;
+  }
+
+  #skills h4 {
+    font-family: subject_bold;
+    text-align: center;
+    color: #aaaaaa;
+  }
+
+  #skills ul {
+    margin-top: 2rem;
+    list-style-type: none;
+  }
+
+  #skills li {
+    color: #aaaaaa;
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  /* Projects Section */
+  #projects {
+    height: 100vh;
+  }
+
+  #projects .row {
+    --bs-gutter-x: 7rem;
+    padding-top: 7rem;
+  }
+
+  #projects .header h1 {
+    font-family: subject_bold;
+    text-align: right;
+    margin-bottom: 1.5rem;
+    font-size: 2.8rem;
+  }
+
+  #projects .header h2 {
+    color: #aaaaaa;
+    text-align: right;
+    font-size: 1.9rem;
+  }
+
+  #projects .project h1 {
+    color: #00aea3;
+    font-size: 1.7rem;
+  }
+
+  #projects .project h1 span {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  #projects .project p {
+    color: #aaaaaa;
+    font-size: 1.1rem;
+  }
+
+  #projects .project .tag span {
+    padding: 0.2rem 0.9rem;
+    border: 1px solid;
+    margin-right: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-radius: 0.5rem;
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 10em 0;
+  }
+
+  #contact h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #contact .desc {
+    color: #aaaaaa;
+    margin-bottom: 2rem;
+  }
+
+  #contact .last-desc {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  #contact .btn-custom {
+    padding: 0.5rem 2rem;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    transition: all 0.2s;
+  }
+
+  .footer img {
+    width: 2rem;
+  }
+}
+
+.welcome .line4 .github path {
+  transition: all 0.2s;
+}
+
+.welcome .line4 .email path {
+  transition: all 0.2s;
+}
+
+.welcome .line4 .facebook path {
+  transition: all 0.2s;
+}
+
+.welcome .line4 .github path:hover {
+  fill: #00aea3;
+}
+
+.welcome .line4 .email path:hover {
+  fill: #00aea3;
+}
+
+.welcome .line4 .facebook path:hover {
+  fill: #00aea3;
+}
+
+#skills li {
+  transition: all 0.2s;
+  cursor: default;
+}
+
+#skills li:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+#projects .project .tag span {
+  transition: all 0.2s;
+}
+
+#projects .project .tag span:hover {
+  background: #fff;
+  transform: scale(1.2);
+  cursor: default;
+  color: #222;
+}
+
+#contact a {
+  text-decoration: none;
+}
+
+.footer {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.footer a,
+.footer p {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+
+.footer a:hover,
+.footer p:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+#contact .btn-custom:hover {
+  color: #00aea3;
+  border: 1px solid #00aea3;
+}
