@@ -857,7 +857,7 @@ a {
 
   /* Projects Section */
   #projects {
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 10rem;
   }
 
@@ -1016,7 +1016,7 @@ a {
 
   /* Skill Section */
   #skills {
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   #skills h1 {
@@ -1056,7 +1056,7 @@ a {
 
   /* Projects Section */
   #projects {
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 0rem;
   }
 
@@ -1214,9 +1214,9 @@ a {
   }
 
   /* Skill Section */
-  #skills {
+  /* #skills {
     height: 100vh;
-  }
+  } */
 
   #skills h1 {
     font-family: subject_bold;
@@ -1253,9 +1253,9 @@ a {
   }
 
   /* Projects Section */
-  #projects {
+  /* #projects {
     height: 100vh;
-  }
+  } */
 
   #projects .row {
     --bs-gutter-x: 7rem;
