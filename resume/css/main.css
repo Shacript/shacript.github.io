@@ -1015,9 +1015,9 @@ a {
   }
 
   /* Skill Section */
-  #skills {
-    /* height: 100vh; */
-  }
+  /* #skills {
+    height: 100vh;
+  } */
 
   #skills h1 {
     font-family: subject_bold;
