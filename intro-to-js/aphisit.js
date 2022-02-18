@@ -18,15 +18,15 @@ function helloWorld() {
 }
 
 const calAge = () => {
-  const yearOfBirth = Number(prompt('กรุณากรอกปีเกิดของคุณ ( ค.ศ ) '))
-  const currentlyYear = new Date().getFullYear()
-  const currentlyAge = currentlyYear - yearOfBirth
-  alert(`ยินดีด้วย นายอยู่ในประเทศนี้มา ${currentlyAge} ปีแล้ว`)
+  const yearOfBirth = Number(prompt('กรุณากรอกปีเกิดของคุณ ( ค.ศ ) ')) //รับค่ามาพร้อมแปลงให้เป็น Number เพราะ โดยปรกติ prompt จะรับค่ามาแล้วมันจะเป็น string เสมอ
+  const currentlyYear = new Date().getFullYear() //รับค่าปีปัจจุบันจากระบบ
+  const currentlyAge = currentlyYear - yearOfBirth //ทำการคำนวณโดนตั้ง ปีปัจจุบัน - ปีเกิด
+  alert(`ยินดีด้วย นายอยู่ในประเทศนี้มา ${currentlyAge} ปีแล้ว`) //แสดงผลเลยจ้าาา
 }
 
 const loadProfile = () => {
-  const name = 'Aphisit'
-  const province = 'Phitsanulok'
-  document.getElementById('my-name').innerHTML = name
-  document.getElementById('my-province').innerHTML = province
+  const name = 'Aphisit' //สร้างตัวแปร name
+  const province = 'Phitsanulok' //สร้างตัวแปร province 
+  document.getElementById('my-name').innerHTML = name // นำตัวแปรไปใส่ลง html ที่มี id my-name
+  document.getElementById('my-province').innerHTML = province // นำตัวแปรไปใส่ลง html ที่มี id my-province
 }
