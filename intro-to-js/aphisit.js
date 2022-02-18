@@ -16,3 +16,17 @@ function helloWorld() {
   alert(h1message + " (บทจะมีก็มีไม่ขาด บทจะขาดสักบาทก็ไม่มี)"); // ใช้คำสั่ง document.getElementById เหมือนใน askMyName เพื่อเอาข้อความใน h1 มาใส่
   //ทำการ Alert Box โดยจะมีข้อความตามในวงเล็บ โดยนำ ตัวแปร h1message + String คำคม
 }
+
+const calAge = () => {
+  const yearOfBirth = Number(prompt('กรุณากรอกปีเกิดของคุณ ( ค.ศ ) '))
+  const currentlyYear = new Date().getFullYear()
+  const currentlyAge = currentlyYear - yearOfBirth
+  alert(`ยินดีด้วย นายอยู่ในประเทศนี้มา ${currentlyAge} ปีแล้ว`)
+}
+
+const loadProfile = () => {
+  const name = 'Aphisit'
+  const province = 'Phitsanulok'
+  document.getElementById('my-name').innerHTML = name
+  document.getElementById('my-province').innerHTML = province
+}
